@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="afa3ddbc-5796-4950-8239-3fda102f9d5c" name="Default Changelist" comment="" />
+    <list default="true" id="afa3ddbc-5796-4950-8239-3fda102f9d5c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/mysql/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/mysql/mysql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/redis/redis.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/redis/redis.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/settings.go" beforeDir="false" afterPath="$PROJECT_DIR$/settings/settings.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app_base.exe" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +26,9 @@
     </option>
   </component>
   <component name="GOROOT" path="C:/zhyf/code/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
@@ -24,8 +38,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
@@ -60,6 +76,10 @@
     </environment>
   </component>
   <component name="WindowStateProjectService">
+    <state x="984" y="319" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609819324579">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="984" y="319" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1609819324579" />
     <state width="1177" height="247" key="GridCell.Tab.0.bottom" timestamp="1609817334994">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -96,9 +116,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="775" y="174" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1609819100245" />
-    <state x="937" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1609756417452">
+    <state x="937" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1609820427145">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="937" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1609756417452" />
+    <state x="937" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1609820427145" />
   </component>
 </project>

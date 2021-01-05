@@ -4,33 +4,14 @@ import (
 	"fmt"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jmoiron/sqlx"
-	"github.com/spf13/viper"
 	"go.uber.org/zap"
+	"web_app_base/settings"
 )
 
 // 定义一个初始化数据库的函数
 var db *sqlx.DB
 
-type MySQLConfig struct {
-	User          string
-	Password      string
-	Host          string
-	Port          int
-	DBname        string
-	MaxOpenConnes int
-	MaxIdleConnes int
-}
-
-func Init() (err error) {
-	var mysqlConfig = MySQLConfig{
-		User:          viper.GetString("mysql.user"),
-		Password:      viper.GetString("mysql.password"),
-		Host:          viper.GetString("mysql.host"),
-		Port:          viper.GetInt("mysql.port"),
-		DBname:        viper.GetString("mysql.dbname"),
-		MaxOpenConnes: viper.GetInt("mysql.max_open_conns"),
-		MaxIdleConnes: viper.GetInt("mysql.max_idle_conns"),
-	}
+func Init(mysqlConfig *settings.MySQLConfig) (err error) {
 	dsn := fmt.Sprintf("%s:%s@tcp(%s:%d)/%s?charset=utf8mb4&parseTime=True",
 		mysqlConfig.User,
 		mysqlConfig.Password,
@@ -44,8 +25,8 @@ func Init() (err error) {
 		zap.L().Error("connect DB failed, err:%v\n", zap.Error(err))
 		return
 	}
-	db.SetMaxOpenConns(mysqlConfig.MaxOpenConnes)
-	db.SetMaxIdleConns(mysqlConfig.MaxIdleConnes)
+	db.SetMaxOpenConns(mysqlConfig.MaxOpenConns)
+	db.SetMaxIdleConns(mysqlConfig.MaxIdleConns)
 	return
 }
 

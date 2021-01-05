@@ -28,20 +28,20 @@ func main() {
 	if err := logger.Init(); err != nil {
 		fmt.Printf("init logger failed , err :%v\n", err)
 	}
-	defer zap.L().Sync()
 	zap.L().Debug("logger init ok")
+	defer zap.L().Sync()
 	// init mysql
-	if err := mysql.Init(); err != nil {
+	if err := mysql.Init(settings.Conf.MySQLConfig); err != nil {
 		fmt.Printf("init logger failed , err :%v\n", err)
 	}
 	defer mysql.Close()
 	// init redis
-	if err := redis.Init(); err != nil {
+	if err := redis.Init(settings.Conf.RedisConfig); err != nil {
 		fmt.Printf("init logger failed , err :%v\n", err)
 	}
 	defer redis.Close()
 
-	// controller
+	// init routes
 	r := routes.Setup()
 	//  start sever gracefully
 	srv := &http.Server{
