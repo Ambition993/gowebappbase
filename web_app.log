@@ -1,0 +1,17 @@
+{"level":"DEBUG","time":"2021-01-04T17:48:10.721+0800","caller":"web_app_base/main.go:20","msg":"logger init ok"}
+{"level":"DEBUG","time":"2021-01-04T17:48:18.941+0800","caller":"web_app_base/main.go:20","msg":"logger init ok"}
+{"level":"DEBUG","time":"2021-01-04T17:49:28.129+0800","caller":"web_app_base/main.go:20","msg":"logger init ok"}
+{"level":"DEBUG","time":"2021-01-04T18:13:39.827+0800","caller":"web_app_base/main.go:22","msg":"logger init ok"}
+{"level":"ERROR","time":"2021-01-04T18:13:39.855+0800","caller":"mysql/mysql.go:24","msg":"connect DB failed, err:%v\n","error":"dial tcp: lookup tcp/%!d(string=gorm): getaddrinfow: The specified class was not found."}
+{"level":"DEBUG","time":"2021-01-04T18:15:18.568+0800","caller":"web_app_base/main.go:22","msg":"logger init ok"}
+{"level":"ERROR","time":"2021-01-04T18:15:18.594+0800","caller":"mysql/mysql.go:24","msg":"connect DB failed, err:%v\n","error":"dial tcp: lookup tcp/%!d(string=gorm): getaddrinfow: The specified class was not found."}
+{"level":"DEBUG","time":"2021-01-04T18:18:40.775+0800","caller":"web_app_base/main.go:22","msg":"logger init ok"}
+{"level":"ERROR","time":"2021-01-04T18:18:40.801+0800","caller":"mysql/mysql.go:24","msg":"connect DB failed, err:%v\n","error":"dial tcp: lookup tcp/%!d(string=gorm): getaddrinfow: The specified class was not found."}
+{"level":"DEBUG","time":"2021-01-04T18:25:36.643+0800","caller":"web_app_base/main.go:22","msg":"logger init ok"}
+{"level":"DEBUG","time":"2021-01-04T18:41:18.146+0800","caller":"web_app_base/main.go:22","msg":"logger init ok"}
+{"level":"DEBUG","time":"2021-01-04T18:41:51.768+0800","caller":"web_app_base/main.go:22","msg":"logger init ok"}
+{"level":"DEBUG","time":"2021-01-04T18:42:49.784+0800","caller":"web_app_base/main.go:22","msg":"logger init ok"}
+{"level":"DEBUG","time":"2021-01-05T11:39:05.487+0800","caller":"web_app_base/main.go:32","msg":"logger init ok"}
+{"level":"INFO","time":"2021-01-05T11:39:31.185+0800","caller":"logger/logger.go:70","msg":"/hello","status":200,"method":"GET","path":"/hello","query":"","ip":"::1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36","errors":"","cost":0.0009968}
+{"level":"INFO","time":"2021-01-05T11:39:31.515+0800","caller":"logger/logger.go:70","msg":"/favicon.ico","status":404,"method":"GET","path":"/favicon.ico","query":"","ip":"::1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36","errors":"","cost":0}
+{"level":"INFO","time":"2021-01-05T11:44:55.074+0800","caller":"web_app_base/main.go:67","msg":"Shutdown Server ..."}
